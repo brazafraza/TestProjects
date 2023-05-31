@@ -10,7 +10,7 @@ public class TankController : MonoBehaviour
 
     public float turretRotationalSpeed = 1.5f;
 
-    public float shellSpeed = 20;
+    public float shellSpeed = 200;
 
     public GameObject shellPrefab;
 
@@ -57,7 +57,7 @@ public class TankController : MonoBehaviour
         }
 
 
-
+        //rotate the nozzle
 
 
         if (Input.GetKey(rotateTurretLeftKey))
@@ -70,6 +70,8 @@ public class TankController : MonoBehaviour
             turret.transform.Rotate(0, turretRotationalSpeed, 0, Space.Self);
         }
 
+
+        //tank controls
 
 
         if (Input.GetKey(forwardsKey))
